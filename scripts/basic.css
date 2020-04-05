@@ -1,0 +1,183 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+a:visited{
+    color: #ff4000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a{
+    color: #ff4000;
+    text-decoration: none;
+    font-weight: bolder;
+}
+body {
+    font-family: Dejavu Sans;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: calc(100% - 25px);
+    background: #FFFBCA;
+}
+main{
+    text-align: center;
+    position: relative;
+    left: 30px;
+    top: 100px;
+    width: calc(100% - 60px);
+    height: 100%;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+main article, .content{
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 20px;
+    width: 75%;
+    text-align: justify;
+    background: gold;
+    box-shadow: 4px 4px #FFF720;
+    border-radius: 5px;
+}
+.content{
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+main article:last-child{
+    margin-bottom: 75px;
+}
+main article h2{
+    text-align: center;
+}
+footer{
+    margin-top: 75px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 18px;
+}
+#mainNav{
+    top: 25px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+}
+#mainNav img, td img{
+    height: 27px;
+}
+nav#mainNav nav{
+    display: inline-block;
+    vertical-align: top;
+    background: #fff86f;
+}
+nav#mainNav nav:first-child{
+    border-radius: 5px 0 0 5px;
+}
+nav#mainNav nav:last-child{
+    border-radius: 0 5px 5px 0;
+}
+nav#mainNav nav:not(:last-child) a:after{
+    content: '\00a0';
+}
+nav#mainNav nav a{
+    color: #777777;
+}
+nav#mainNav nav a:not(:first-child){
+    display: none;
+}
+nav#mainNav nav:hover{
+    background: #ffff8f;
+    border-radius: 0 0 5px 5px;
+}
+nav#mainNav nav:hover > a{
+    display: block;
+}
+nav#mainNav nav:hover > a:last-child{
+    display: block;
+    border-radius: 0 0 5px 5px;
+}
+nav#mainNav nav:hover > a:first-child{
+    display: block;
+    border-radius: 0 0 0 0;
+}
+nav#mainNav nav:hover > a:hover{
+    background: #fff805;
+}
+nav#mainNav nav:last-child:hover a:first-child:hover{
+    border-top-right-radius: 5px;
+}
+nav#mainNav nav:last-child:hover a:last-child:hover{
+    border-bottom-right-radius: 5px;
+}
+nav#mainNav nav:first-child:hover a:first-child:hover{
+    border-top-left-radius: 5px;
+}
+nav#mainNav nav:first-child:hover a:last-child:hover{
+    border-bottom-left-radius: 5px;
+}
+.sideNav{
+    width: calc(25% - 20px);
+    background: gold;
+    box-shadow: 4px 4px #FFF720;
+    border-radius: 5px;
+}
+.sideNav p{
+    padding: 0 15px 0 15px;
+    text-align: justify;
+}
+.right{
+    float: right;
+    width: fit-content;
+}
+.left{
+    float: left;
+    width: fit-content;
+}
+.center, .justify{
+    width: fit-content;
+    right: 0;
+    left: 0;
+    margin:auto;
+}
+.justify{
+    width: inherit;
+    text-align: justify;
+}
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid #bdb605;
+}
+th{
+    background: #fff805;
+    font-size: 20px;
+}
+tr:nth-child(2n+1){
+    background: #ffe800;
+}
+.small-input{
+    width: 40px;
+}

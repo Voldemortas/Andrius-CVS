@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^$ /template.php?page=admin
+RewriteRule ^([^/]+)/$  /template.php?page=admin&id=$1
+RewriteRule ^([^/]+)/([^/]+)/$  /template.php?page=admin&id=$1&action=$2
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$  /template.php?page=admin&id=$1&action=$2&offset=$3

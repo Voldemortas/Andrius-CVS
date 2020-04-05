@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^config/ - [L,R=404]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/$  /template.php?page=$1&id=$2&action=$3&offset=$4
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$  /template.php?page=$1&id=$2&action=$3
+RewriteRule ^([^/]+)/([^/]+)/$  template.php?page=$1&id=$2
+RewriteRule ^([^/]+)/$  template.php?page=$1
+ErrorDocument 404 /404.php
